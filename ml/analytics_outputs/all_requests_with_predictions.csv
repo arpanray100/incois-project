@@ -1,0 +1,9 @@
+collection,description,_id,predicted_hazard
+help_requests,Flood in downtown area,68c5ee0e6185d81bc13cbd43,4
+resource_requests,Need water supply urgently,68c5ee0e6185d81bc13cbd44,4
+service_requests,Rescue team required,68c5ee0e6185d81bc13cbd45,4
+donations,Donating food and water,68c5ee0e6185d81bc13cbd46,4
+emergency_reports,Small fire reported,68c5ee0f6185d81bc13cbd47,4
+reports,Huge waves near the coast,68b2fe259a40302922cd0d22,4
+reports,Flooded beach,68b3033cda8bebd1ed389be2,4
+reports,Huge waves near shore,68b87b36cdbad550b2945b4b,4

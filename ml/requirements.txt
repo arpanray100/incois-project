@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+nltk
+flask
+fastapi
+uvicorn
+pymongo
+requests
+tensorflow
+torch
+torchvision
+pillow

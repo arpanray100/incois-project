@@ -1,0 +1,202 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #111827;
+  --fg-light: #111827;
+  --fg-dark: #f9f9f9;
+  --sidebar-bg-light: #1f2937;
+  --sidebar-bg-dark: #1f2937;
+  --topbar-bg-light: #fff;
+  --topbar-bg-dark: #1f2937;
+  --card-bg-light: #fff;
+  --card-bg-dark: #1f2937;
+  --hover-bg-light: #ddd;
+  --hover-bg-dark: #374151;
+}
+
+body.light-theme {
+  background-color: var(--bg-light);
+  color: var(--fg-light);
+}
+
+body.dark-theme {
+  background-color: var(--bg-dark);
+  color: var(--fg-dark);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--sidebar-bg-light);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+body.dark-theme .sidebar {
+  background-color: var(--sidebar-bg-dark);
+}
+.sidebar-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: var(--hover-bg-light);
+}
+body.dark-theme .sidebar ul li.active,
+body.dark-theme .sidebar ul li:hover {
+  background-color: var(--hover-bg-dark);
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: var(--topbar-bg-light);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+body.dark-theme .topbar {
+  background-color: var(--topbar-bg-dark);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  margin-left: 250px;
+  padding: 20px;
+  margin-top: 60px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Reports Table */
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.reports-table th,
+.reports-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.reports-table th {
+  background-color: #1f2937;
+  color: #fff;
+}
+body.dark-theme .reports-table th {
+  background-color: #374151;
+}
+.reports-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+body.dark-theme .reports-table tr:nth-child(even) {
+  background-color: #1f2937;
+}
+.reports-table tr:hover {
+  background-color: #ddd;
+}
+body.dark-theme .reports-table tr:hover {
+  background-color: #4b5563;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-top: 40px;
+  background-color: var(--card-bg-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+body.dark-theme .chart-container {
+  background-color: var(--card-bg-dark);
+}
+/* Login Page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+body.light-theme .login-container {
+  background-color: var(--bg-light);
+  color: var(--fg-light);
+}
+body.dark-theme .login-container {
+  background-color: var(--bg-dark);
+  color: var(--fg-dark);
+}
+
+.login-form {
+  background-color: var(--card-bg-light);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 350px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+body.dark-theme .login-form {
+  background-color: var(--card-bg-dark);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+body.dark-theme .login-form input {
+  background-color: #1f2937;
+  color: #f9f9f9;
+  border: 1px solid #374151;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #1f2937;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.login-form button:hover {
+  background-color: #374151;
+}
