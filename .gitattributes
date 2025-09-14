@@ -1,0 +1,7 @@
+# Force GitHub Linguist to detect React/TypeScript correctly
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.json linguist-language=JSON
+*.css linguist-language=CSS
