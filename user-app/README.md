@@ -47,7 +47,3 @@ incois-project/
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/arpanray100/incois-project.git
-cd incois-project
