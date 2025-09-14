@@ -1,1 +1,43 @@
 
+# --- Node.js / Backend ---
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+
+# --- Python / ML ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+venv/
+.env/
+.venv/
+*.log
+
+# --- React Native / Next.js Frontend ---
+.expo/
+.expo-shared/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.next/
+out/
+android/
+ios/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Private JSON keys (do NOT upload) ---
+*.json
+!package.json
+!tsconfig.json
+!next.config.js
