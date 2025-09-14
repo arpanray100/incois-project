@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 🌊 INCOIS Disaster Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-stack disaster management system built with **React Native (user app)**, **Next.js (admin dashboard)**, **Node.js/Express (backend)**, and **Machine Learning (Python)**.  
+This project helps victims report hazards, NGOs/government monitor data, and generate real-time insights.
 
-## Get started
+---
 
-1. Install dependencies
+## 📂 Project Structure
 
-   ```bash
-   npm install
-   ```
+incois-project/
+│
+├── admin-dashboard/ # Next.js admin dashboard (data visualization, PDF reports)
+├── backend/ # Node.js + Express backend APIs
+├── user-app/ # React Native mobile app for victims/users
+├── ml/ # Machine Learning models & analytics pipeline
+├── package.json # Root package (workspace info, scripts)
+└── README.md # Project documentation
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Features
 
-In the output, you'll find options to open the app in a
+- **Victim App (React Native)**
+  - Report hazards (fire, flood, earthquake, tsunami, etc.)
+  - Attach images/videos/audio/documents
+  - Auto-detect or enter location
+  - Input name & phone number for emergency response
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Backend (Node.js + Express + MongoDB)**
+  - REST APIs for hazard, resource, service, donations, emergencies
+  - File upload support with Multer
+  - Data stored in MongoDB
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Admin Dashboard (Next.js)**
+  - View & filter hazard reports
+  - Sort by type, location, and date
+  - Preview media (images/videos/audio/docs)
+  - Download hazard reports as **PDF**
 
-## Get a fresh project
+- **Machine Learning (Python)**
+  - Analyze hazard trends
+  - Generate insights with **Plotly charts**
+  - Export ML reports as PDF
+  - Auto-scheduled ML jobs (cron)
 
-When you're ready, run:
+---
 
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/arpanray100/incois-project.git
+cd incois-project
